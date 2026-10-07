@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>יובל &amp; מורגן</title>
+<meta name="description" content="חגיגת החתונה של יובל ומורגן · יום ראשון, 25.10.2026 · אישור הגעה">
+<meta property="og:type" content="website">
+<meta property="og:title" content="יובל &amp; מורגן — חוגגים בישראל">
+<meta property="og:description" content="יום ראשון, 25.10.2026 · נשמח שתאשרו הגעה ותכתבו כמה תהיו">
+<meta name="theme-color" content="#061512">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Assistant:wght@300;400;600&family=Heebo:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.sheet{display:flex;flex-direction:column;gap:clamp(22px,5vw,34px)}
+.card{
+  border:1px solid rgba(201,167,88,.3);
+  background:linear-gradient(180deg, rgba(246,241,231,.045), rgba(246,241,231,.015));
+  padding:clamp(24px,6vw,40px);
+  display:flex;flex-direction:column;gap:22px;
+}
+.card h2{font-family:"Frank Ruhl Libre",Georgia,serif;font-weight:400;font-size:26px;margin:0;text-align:center}
+.card .hint{margin:-14px 0 0;text-align:center;color:var(--ivory-dim);font-size:15px}
+label.lbl{
+  display:block;font-family:"Heebo",sans-serif;font-size:12px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;
+}
+input[type=text],textarea{
+  width:100%;background:var(--field);border:1px solid rgba(246,241,231,.18);
+  color:var(--ivory);font-family:inherit;font-size:17px;padding:13px 15px;
+  border-radius:2px;transition:border-color .18s,background .18s;
+}
+textarea{resize:vertical;min-height:76px;font-size:16px}
+input[type=text]::placeholder,textarea::placeholder{color:rgba(246,241,231,.34)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--gold);background:rgba(246,241,231,.08)}
+.stepper{display:flex;align-items:center;gap:6px;border:1px solid rgba(246,241,231,.18);background:var(--field);border-radius:2px;padding:6px}
+.stepper button{
+  flex:0 0 46px;height:46px;border:0;border-radius:2px;cursor:pointer;
+  background:rgba(246,241,231,.07);color:var(--ivory);
+  font-size:24px;line-height:1;font-family:inherit;transition:background .18s,color .18s;
+}
+.stepper button:hover{background:var(--gold);color:var(--ink-deep)}
+.stepper button:disabled{opacity:.3;cursor:not-allowed;background:rgba(246,241,231,.07);color:var(--ivory)}
+.stepper .count{flex:1;text-align:center;font-family:"Frank Ruhl Libre",Georgia,serif;font-size:30px;font-variant-numeric:tabular-nums}
+.stepper .count small{display:block;font-family:"Assistant",sans-serif;font-size:13px;color:var(--ivory-dim)}
+button.cta{
+  width:100%;border:0;border-radius:2px;cursor:pointer;background:var(--gold);color:#13201B;
+  font-family:"Heebo",sans-serif;font-size:17px;font-weight:700;letter-spacing:.06em;
+  padding:16px;transition:background .18s,transform .12s;
+}
+button.cta:hover{background:#DCBB6B}
+button.cta:active{transform:translateY(1px)}
+button.cta:disabled{opacity:.55;cursor:wait}
+.err{color:var(--blush);font-size:15px;margin:0;text-align:center}
+.done{display:flex;flex-direction:column;gap:14px;text-align:center;align-items:center}
+.done .tick{width:52px;height:52px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:24px}
+.done h2{font-size:28px}
+.done p{margin:0;color:var(--ivory-dim)}
+.done strong{color:var(--ivory);font-weight:600}
+button.quiet{
+  background:none;border:1px solid rgba(246,241,231,.25);color:var(--ivory-dim);
+  font-family:"Heebo",sans-serif;font-size:14px;padding:10px 20px;border-radius:2px;cursor:pointer;
+}
+button.quiet:hover{border-color:var(--gold);color:var(--gold)}
+footer{text-align:center;color:var(--ivory-faint);font-size:13px;font-family:"Heebo",sans-serif;letter-spacing:.1em}
+</style>
+</head>
+<body>
+<main class="sheet">
+  <p class="eyebrow">חוגגים בישראל</p>
+
+  <svg class="sprig" width="92" height="40" viewBox="0 0 92 40" fill="none" aria-hidden="true">
+    <path d="M46 38V12" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+    <path d="M46 30c-7 0-12-3-14-9 7-1 12 2 14 9Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M46 30c7 0 12-3 14-9-7-1-12 2-14 9Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M46 20c-5.5 0-9.5-2.4-11-7 5.5-.8 9.5 1.6 11 7Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M46 20c5.5 0 9.5-2.4 11-7-5.5-.8-9.5 1.6-11 7Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+    <circle cx="46" cy="7" r="3.2" stroke="currentColor" stroke-width="1"/>
+    <path d="M4 36h20M88 36H68" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity=".45"/>
+  </svg>
+
+  <h1 class="names">יובל<span class="amp">&amp;</span>מורגן</h1>
+  <div class="rule"><span></span><i></i><span></span></div>
+
+  <p class="lede">אנחנו שמחים ומתרגשים להזמין אתכם לחגיגת החתונה של יובל ואשתו לעתיד מורגן</p>
+  <p class="sub">את החתונה עצמה הם חוגגים בצרפת — ואת השמחה נחגוג יחד גם כאן, עם כל המשפחה והחברים</p>
+
+  <dl class="details">
+    <div><dt>מתי</dt><dd class="big">יום ראשון, 25.10.2026</dd></div>
+    <div><dt>איפה</dt><dd>המיקום יישלח בהמשך</dd></div>
+  </dl>
+
+  <section class="card" id="formCard">
+    <h2>אישור הגעה</h2>
+    <p class="hint">נשמח שתאשרו הגעה ותכתבו כמה תהיו</p>
+    <form id="rsvpForm" novalidate>
+      <div style="margin-bottom:20px">
+        <label class="lbl" for="name">השם שלכם</label>
+        <input type="text" id="name" name="name" maxlength="80" autocomplete="name" placeholder="למשל: משפחת כהן" required>
+      </div>
+      <div style="margin-bottom:20px">
+        <label class="lbl" for="guestsText">כמה תהיו?</label>
+        <div class="stepper">
+          <button type="button" id="minus" aria-label="פחות">&#8722;</button>
+          <div class="count" aria-live="polite"><span id="guestsText">2</span><small id="guestsWord">אנשים</small></div>
+          <button type="button" id="plus" aria-label="עוד">+</button>
+        </div>
+      </div>
+      <div style="margin-bottom:20px">
+        <label class="lbl" for="note">משהו שתרצו להוסיף <span style="color:var(--ivory-faint)">(לא חובה)</span></label>
+        <textarea id="note" name="note" maxlength="400" placeholder="ברכה, הערה, או מה שתרצו שנדע"></textarea>
+      </div>
+      <p class="err" id="err" hidden></p>
+      <button class="cta" type="submit" id="submit">מאשרים הגעה</button>
+    </form>
+  </section>
+
+  <footer>יובל &amp; מורגן · 25.10.2026</footer>
+</main>
+
+<script>
+(function(){
+  var API='https://mjflpmjimvckkqxxkkvc.supabase.co/functions/v1/invite';
+  var MIN=1, MAX=40, guests=2;
+  var txt=document.getElementById('guestsText');
+  var word=document.getElementById('guestsWord');
+  var minus=document.getElementById('minus');
+  var plus=document.getElementById('plus');
+  var form=document.getElementById('rsvpForm');
+  var card=document.getElementById('formCard');
+  var err=document.getElementById('err');
+  var submit=document.getElementById('submit');
+
+  // One id per device, so re-submitting updates the same answer
+  // instead of adding a second line to the guest list.
+  function clientId(){
+    var k='rsvp_cid', v=null;
+    try{ v=localStorage.getItem(k); }catch(e){}
+    if(!v){
+      v = (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
+        : String(Date.now())+'-'+Math.random().toString(36).slice(2,10);
+      try{ localStorage.setItem(k,v); }catch(e){}
+    }
+    return v;
+  }
+
+  function paint(){
+    txt.textContent=String(guests);
+    word.textContent = guests===1 ? 'אדם אחד' : 'אנשים';
+    minus.disabled = guests<=MIN;
+    plus.disabled = guests>=MAX;
+  }
+  minus.addEventListener('click',function(){ if(guests>MIN){guests--;paint();} });
+  plus.addEventListener('click',function(){ if(guests<MAX){guests++;paint();} });
+  paint();
+
+  function showDone(name,count){
+    card.innerHTML='';
+    var w=document.createElement('div'); w.className='done';
+    var t=document.createElement('div'); t.className='tick'; t.textContent='✓';
+    var h=document.createElement('h2'); h.textContent='תודה, נתראה!';
+    var p=document.createElement('p');
+    var s=document.createElement('strong'); s.textContent=name;
+    p.appendChild(document.createTextNode('רשמנו '));
+    p.appendChild(s);
+    p.appendChild(document.createTextNode(' · ' + count + (count===1?' אדם':' אנשים')));
+    var p2=document.createElement('p'); p2.textContent='נעדכן אתכם במיקום המדויק בהמשך.';
+    var b=document.createElement('button'); b.className='quiet'; b.type='button';
+    b.textContent='רוצים לעדכן את הפרטים?';
+    b.addEventListener('click',function(){ location.hash='edit'; location.reload(); });
+    w.appendChild(t); w.appendChild(h); w.appendChild(p); w.appendChild(p2); w.appendChild(b);
+    card.appendChild(w);
+  }
+
+  var saved=null;
+  try{ saved=JSON.parse(localStorage.getItem('rsvp')||'null'); }catch(e){}
+  if(saved && saved.name){
+    if(location.hash==='#edit'){
+      document.getElementById('name').value=saved.name;
+      guests=saved.guests||2; paint();
+      if(saved.note) document.getElementById('note').value=saved.note;
+      submit.textContent='עדכון הפרטים';
+    } else {
+      showDone(saved.name, saved.guests);
+    }
+  }
+
+  form.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    err.hidden=true;
+    var name=document.getElementById('name').value.trim();
+    var note=document.getElementById('note').value.trim();
+    if(name.length<2){ err.textContent='נשמח שתכתבו את השם שלכם'; err.hidden=false; return; }
+    var label=submit.textContent;
+    submit.disabled=true; submit.textContent='רק רגע…';
+    fetch(API,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({name:name,guests:guests,note:note,cid:clientId()})
+    }).then(function(r){ if(!r.ok) throw new Error('bad'); return r.json(); })
+      .then(function(){
+        try{ localStorage.setItem('rsvp',JSON.stringify({name:name,guests:guests,note:note})); }catch(e){}
+        if(location.hash) history.replaceState(null,'',location.pathname);
+        showDone(name,guests);
+      })
+      .catch(function(){
+        submit.disabled=false; submit.textContent=label;
+        err.textContent='משהו לא עבד. אפשר לנסות שוב בעוד רגע.'; err.hidden=false;
+      });
+  });
+})();
+</script>
+</body>
+</html>

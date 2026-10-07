@@ -1,0 +1,63 @@
+:root{
+  --ink:#0C2420; --ink-deep:#061512;
+  --ivory:#F6F1E7; --ivory-dim:rgba(246,241,231,.66); --ivory-faint:rgba(246,241,231,.3);
+  --gold:#C9A758; --blush:#E79B84;
+  --field:rgba(246,241,231,.05);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--ink-deep);
+  background-image:
+    radial-gradient(120% 85% at 50% -10%, #17463D 0%, rgba(23,70,61,0) 58%),
+    radial-gradient(90% 60% at 50% 115%, #1B4A3F 0%, rgba(27,74,63,0) 60%);
+  background-attachment:fixed;
+  color:var(--ivory);
+  font-family:"Assistant",ui-sans-serif,system-ui,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.65;
+  direction:rtl;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--gold);color:var(--ink-deep)}
+.sheet{max-width:640px;margin:0 auto;padding-block:clamp(24px,6vw,64px);padding-inline:20px}
+.eyebrow{
+  font-family:"Heebo",sans-serif;font-size:12px;font-weight:500;
+  letter-spacing:.32em;text-transform:uppercase;color:var(--gold);
+  margin:0;text-align:center;
+}
+.sprig{display:block;margin:0 auto;color:var(--gold);opacity:.85}
+h1.names{
+  font-family:"Frank Ruhl Libre",Georgia,serif;
+  font-weight:500;font-size:clamp(44px,13vw,78px);line-height:1.04;
+  letter-spacing:-.01em;margin:0;text-align:center;text-wrap:balance;
+}
+h1.names .amp{
+  display:block;font-size:.42em;color:var(--gold);font-weight:300;
+  margin-block:.12em;
+}
+.rule{display:flex;align-items:center;justify-content:center;gap:12px;margin-block:4px}
+.rule span{height:1px;width:72px;background:linear-gradient(to left,transparent,var(--gold))}
+.rule span:last-child{background:linear-gradient(to right,transparent,var(--gold))}
+.rule i{width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
+.lede{
+  font-family:"Frank Ruhl Libre",Georgia,serif;
+  font-size:clamp(19px,4.4vw,23px);line-height:1.6;text-align:center;
+  margin:0;text-wrap:balance;
+}
+.sub{text-align:center;color:var(--ivory-dim);font-size:16px;margin:0;text-wrap:balance}
+.details{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 0;margin:0;padding:0}
+.details>div{
+  flex:1 1 180px;min-width:0;padding:18px 14px;text-align:center;
+  border-top:1px solid rgba(201,167,88,.28);
+  border-bottom:1px solid rgba(201,167,88,.28);
+}
+.details>div+div{border-right:1px solid rgba(201,167,88,.28)}
+.details dt{
+  font-family:"Heebo",sans-serif;font-size:11px;font-weight:500;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;
+}
+.details dd{margin:0;font-size:17px}
+.details .big{font-family:"Frank Ruhl Libre",Georgia,serif;font-size:22px;font-variant-numeric:tabular-nums}
+@media (max-width:460px){ .details>div+div{border-right:0} }
+:where(input,textarea,button,a):focus-visible{outline:2px solid var(--blush);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
